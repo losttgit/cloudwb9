@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 1300px;
+        background: white;
+        padding: 120px;
+        border-radius: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 40px;
+      }
+
+      .profile-section {
+        text-align: center;
+      }
+
+      .profile-image {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        object-fit: cover;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .title {
+        color: #666;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+
+      .social-links a {
+        color: #333;
+        text-decoration: none;
+        padding: 8px;
+      }
+
+      .content-section h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        padding: 10px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary {
+        background: #0066ff;
+        color: white;
+      }
+
+      .btn-secondary {
+        background: #f5f5f5;
+        color: #333;
+      }
+
+      .description {
+        color: #666;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .social-links a {
+        color: #333;
+        font-size: 24px;
+        text-decoration: none;
+        padding: 8px;
+        transition: color 0.3s;
+      }
+      .social-links a:hover {
+        color: #0073e6; /* Color change on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-section">
+        <a href="/faqihprofile">
+          <img
+            src="/static/img/Muh. Faqih Muttaqin.jpg"
+            alt="Profile Picture"
+            class="profile-image"
+          />
+          <h2 class="name">Muh. Faqih Muttaqin</h2>
+          <p class="title">22.83.0910</p>
+          <div class="social-links">
+            <a href="https://fotomhs.amikom.ac.id/2022/22_83_0910.jpg" aria-label="Amikom" target="_blank">
+              <img src="/static/img/logo.jpg" alt="Amikom Logo" style="width: 30px; height: 30px;" />
+            </a>
+            <a href="https://www.instagram.com/qinfaqih_" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </a>
+      </div>
+      <div class="content-section">
+        <h1>Kenal Lebih Dekat</h1>
+        <p class="subtitle">Halo aku suka foto dan edit video</p>
+        <div class="buttons">
+          <a href="#" class="btn btn-primary">RESUME</a>
+          <a href="#" class="btn btn-secondary">PROJECTS</a>
+        </div>
+        <p class="description">
+          Every day people do everyday things, but I
+          Can't be one of them
+          I know you hear me now, we are a different kind
+          We can do anything
+          We could be heroes
+          We could be heroes, me and you
+          We could be heroes
+          We could be heroes, me and you
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
